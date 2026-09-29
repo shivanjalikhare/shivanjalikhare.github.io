@@ -1,0 +1,950 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en" class="scroll-smooth"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Alex Rivera | First-Year Sustainable Architecture &amp; Engineering Portfolio&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Tailwind CSS CDN --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tailwind.config = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>darkMode: 'class',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>theme: {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>extend: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>colors: {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>slateDark: '#0f172a',</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>slateCard: '#1e293b',</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>sage: {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>50: '#f4f7f4',</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>100: '#e3ebe3',</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>500: '#4a7c59',</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>600: '#3b6747',</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>700: '#2d5036',</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>terracotta: {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>500: '#c86d51',</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>600: '#b2573d',</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>accentGold: '#d4a373'</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>fontFamily: {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>sans: ['Inter', 'system-ui', 'sans-serif'],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>mono: ['JetBrains Mono', 'monospace'],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Font Awesome Icons --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Google Fonts Inter --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Custom CSS Styles --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0b1120;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #f1f5f9;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Subtle grid background pattern representing drafting paper */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.grid-bg {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-size: 40px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-image:<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),</p>
+<p class="p1"><span class="Apple-converted-space">                </span>linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Custom glassmorphism card styling */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.glass-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(30, 41, 59, 0.7);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>backdrop-filter: blur(12px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255, 255, 255, 0.08);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.glass-nav {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(15, 23, 42, 0.85);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>backdrop-filter: blur(16px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid rgba(255, 255, 255, 0.08);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Smooth tab transition */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tab-btn.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: #4a7c59;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #4a7c59;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: rgba(74, 124, 89, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Custom Modal animation */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal-enter {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(0.95);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal-enter-active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: opacity 0.2s ease-out, transform 0.2s ease-out;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Hand draft sketch style outline */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.sketch-border {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px dashed rgba(212, 163, 115, 0.4);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="grid-bg min-h-screen text-slate-200 antialiased selection:bg-sage-500 selection:text-white"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- NAVIGATION BAR --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Logo / Brand Title --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#hero" class="flex items-center gap-3 group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="w-10 h-10 rounded-lg bg-sage-500/20 border border-sage-500 flex items-center justify-center text-sage-500 group-hover:bg-sage-500 group-hover:text-white transition-all duration-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fa-solid fa-compass-drafting text-lg"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-lg font-bold tracking-tight text-white block leading-none"&gt;Alex Rivera&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-xs text-sage-500 font-mono tracking-wide"&gt;Arch &amp; Environmental Eng&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Desktop Navigation Links --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;nav class="hidden md:flex items-center gap-8 text-sm font-medium"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#about" class="hover:text-sage-500 transition-colors"&gt;About&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#projects" class="hover:text-sage-500 transition-colors"&gt;Projects &amp; Studio&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#skills" class="hover:text-sage-500 transition-colors"&gt;Skills &amp; AI&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#goals" class="hover:text-sage-500 transition-colors"&gt;Goals &amp; Vision&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#contact" class="hover:text-sage-500 transition-colors"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Action Button &amp; Mobile Menu Toggle --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold tracking-wider text-white uppercase bg-sage-500 hover:bg-sage-600 rounded-lg transition-all shadow-md shadow-sage-500/20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Connect</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="md:hidden p-2 text-slate-400 hover:text-white focus:outline-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fa-solid fa-bars text-xl" id="menuIcon"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Mobile Menu Dropdown --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="mobileMenu" class="hidden md:hidden border-t border-slate-800 bg-slateDark/95 px-4 pt-4 pb-6 space-y-3 text-base font-medium"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#about" class="mobile-link block px-3 py-2 rounded-md hover:bg-slate-800 hover:text-sage-500"&gt;About&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#projects" class="mobile-link block px-3 py-2 rounded-md hover:bg-slate-800 hover:text-sage-500"&gt;Projects &amp; Studio&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#skills" class="mobile-link block px-3 py-2 rounded-md hover:bg-slate-800 hover:text-sage-500"&gt;Skills &amp; AI&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#goals" class="mobile-link block px-3 py-2 rounded-md hover:bg-slate-800 hover:text-sage-500"&gt;Goals &amp; Vision&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#contact" class="mobile-link block px-3 py-2 rounded-md hover:bg-slate-800 hover:text-sage-500"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- HERO SECTION --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-28 relative overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Hero Left Column: Bio Teaser &amp; Statement --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="lg:col-span-7 space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-sage-500/10 text-sage-500 border border-sage-500/20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="w-2 h-2 rounded-full bg-sage-500 animate-pulse"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>First-Year Architecture &amp; Sustainability Student</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Bridging &lt;span class="text-transparent bg-clip-text bg-gradient-to-r from-sage-500 via-teal-400 to-terracotta-500"&gt;Analog Artistry&lt;/span&gt; &amp; Sustainable Tech.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-base sm:text-lg text-slate-400 max-w-2xl leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Combining traditional hand-sketching and physical studio modeling with computational CAD analysis and AI literacy to explore the future of net-zero building design.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Hero Call to Action Buttons --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex flex-wrap gap-4 pt-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="#projects" class="px-6 py-3 bg-sage-500 hover:bg-sage-600 text-white font-medium text-sm rounded-lg transition-all shadow-lg shadow-sage-500/25 flex items-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-layer-group"&gt;&lt;/i&gt; Explore Projects</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="#contact" class="px-6 py-3 glass-card hover:bg-slate-800 text-slate-200 hover:text-white font-medium text-sm rounded-lg transition-all border border-slate-700 flex items-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-regular fa-paper-plane"&gt;&lt;/i&gt; Get In Touch</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Quick Highlights Badges --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="pt-6 border-t border-slate-800 grid grid-cols-3 gap-4 text-xs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex flex-col"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-slate-500 uppercase tracking-wider font-mono"&gt;Focus Area&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-slate-300 font-semibold mt-1"&gt;Passive Design &amp; Timber&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex flex-col"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-slate-500 uppercase tracking-wider font-mono"&gt;Medium&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-slate-300 font-semibold mt-1"&gt;Watercolor + Rhino 3D&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex flex-col"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-slate-500 uppercase tracking-wider font-mono"&gt;Affiliation&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-slate-300 font-semibold mt-1"&gt;AIAS &amp; USGBC Member&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Hero Right Column: Sketch/Architectural Visualization Card --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="lg:col-span-5 relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="relative mx-auto max-w-md lg:max-w-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- Decorative background highlight --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-sage-500 to-terracotta-500 opacity-20 blur-xl"&gt;&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- Sketch Card --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="relative glass-card rounded-2xl p-4 overflow-hidden border border-slate-700/60 shadow-2xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="relative h-80 sm:h-96 rounded-xl overflow-hidden bg-slate-900 group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&amp;w=1000&amp;auto=format&amp;fit=crop"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                                     </span>alt="Architectural sketch and eco-pavilion concept"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                                     </span>class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500"</p>
+<p class="p1"><span class="Apple-converted-space">                                     </span>onerror="this.src='https://placehold.co/600x800/1e293b/4a7c59?text=Architectural+Sketch+Preview'"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="absolute inset-0 bg-gradient-to-t from-slateDark via-transparent to-transparent"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="absolute bottom-4 left-4 right-4 p-4 rounded-lg glass-card border border-slate-700/50"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="flex items-center justify-between text-xs text-sage-500 font-mono mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;span&gt;CONCEPT SKETCH #04&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;span&gt;PASSIVE SOLAR PAVILION&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;h3 class="text-sm font-semibold text-white"&gt;Integrating Natural Ventilation &amp; Daylight Framing&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- ABOUT ME SECTION --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="about" class="py-20 border-t border-slate-800/80 bg-slate-900/40"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center max-w-3xl mx-auto mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-xs uppercase tracking-widest font-mono text-sage-500 mb-2"&gt;Foundation &amp; Philosophy&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-3xl font-bold text-white sm:text-4xl"&gt;Artistic Roots, Sustainable Ambition&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Card 1: My Background --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="glass-card rounded-xl p-6 border border-slate-800 hover:border-slate-700 transition-all flex flex-col justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="w-12 h-12 rounded-lg bg-terracotta-500/10 border border-terracotta-500/30 flex items-center justify-center text-terracotta-500 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-pen-nib text-xl"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-bold text-white mb-3"&gt;Artistic Perspective&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-slate-400 text-sm leading-relaxed mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>My journey in spatial design began with observational sketching and watercolor painting. Hand drawing allows me to feel the proportions, structural weight, and natural light before turning to digital tools.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="pt-4 border-t border-slate-800 text-xs font-mono text-slate-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>SKETCHING • WATERCOLOR • DRAFTING</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Card 2: Sustainability Focus --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="glass-card rounded-xl p-6 border border-slate-800 hover:border-slate-700 transition-all flex flex-col justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="w-12 h-12 rounded-lg bg-sage-500/10 border border-sage-500/30 flex items-center justify-center text-sage-500 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-leaf text-xl"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-bold text-white mb-3"&gt;Sustainable Vision&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-slate-400 text-sm leading-relaxed mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Buildings account for nearly 40% of global emissions. My goal is to understand passive cooling, timber engineering, and low-embodied carbon materials to create architecture in harmony with nature.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="pt-4 border-t border-slate-800 text-xs font-mono text-slate-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>PASSIVE DESIGN • MASS TIMBER • DECARBONIZATION</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Card 3: First-Year Academic Path --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="glass-card rounded-xl p-6 border border-slate-800 hover:border-slate-700 transition-all flex flex-col justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="w-12 h-12 rounded-lg bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-graduation-cap text-xl"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-bold text-white mb-3"&gt;Academic Journey&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-slate-400 text-sm leading-relaxed mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Currently enrolled as a 1st Year B.Arch / Engineering dual-interest student. Focus on spatial geometry, physics of structures, architectural history, and generative digital workflows.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="pt-4 border-t border-slate-800 text-xs font-mono text-slate-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>CLASS OF 2029 • STUDIO I &amp; II</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Quote Banner --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mt-12 sketch-border rounded-xl p-6 sm:p-8 bg-slate-900/60 text-center max-w-4xl mx-auto"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;blockquote class="text-base sm:text-lg text-slate-300 italic"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"I view first-year education not as a limitation, but as an opportunity to build a rigorous process—where continuous sketching, climate awareness, and digital tools come together seamlessly."</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/blockquote&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- PROJECTS &amp; COURSEWORK SECTION --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="projects" class="py-20 border-t border-slate-800/80"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col md:flex-row md:items-end justify-between mb-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-xs uppercase tracking-widest font-mono text-sage-500 mb-2"&gt;Studio &amp; Coursework&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-3xl font-bold text-white sm:text-4xl"&gt;Selected Work &amp; Case Studies&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Filter Tabs --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-wrap gap-2 mt-6 md:mt-0 font-medium text-xs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button onclick="filterProjects('all')" class="tab-btn active px-4 py-2 rounded-lg glass-card border border-slate-700 hover:text-sage-500 transition-all"&gt;All Projects&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button onclick="filterProjects('studio')" class="tab-btn px-4 py-2 rounded-lg glass-card border border-slate-700 hover:text-sage-500 transition-all"&gt;Studio Design&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button onclick="filterProjects('sustainable')" class="tab-btn px-4 py-2 rounded-lg glass-card border border-slate-700 hover:text-sage-500 transition-all"&gt;Sustainability Studies&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button onclick="filterProjects('art')" class="tab-btn px-4 py-2 rounded-lg glass-card border border-slate-700 hover:text-sage-500 transition-all"&gt;Sketches &amp; Art&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Projects Grid --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Project Card 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project-card studio glass-card rounded-xl overflow-hidden border border-slate-800 hover:border-sage-500/50 transition-all duration-300 group flex flex-col justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="relative h-56 overflow-hidden bg-slate-900"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&amp;w=800&amp;auto=format&amp;fit=crop"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                                 </span>alt="Solar Pavilion Studio Project"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                                 </span>class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"</p>
+<p class="p1"><span class="Apple-converted-space">                                 </span>onerror="this.src='https://placehold.co/800x600/1e293b/4a7c59?text=Solar+Pavilion+Model'"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="absolute top-3 left-3 bg-sage-500/90 text-white font-mono text-xs px-2.5 py-1 rounded"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>ARCH Studio 101</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center gap-2 text-xs font-mono text-sage-500 mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span&gt;STUDIO BRIEF&lt;/span&gt; • &lt;span&gt;PASSIVE DAYLIGHTING&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-lg font-bold text-white mb-2 group-hover:text-sage-500 transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Solar-Oriented Timber Pavilion</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-slate-400 text-sm leading-relaxed mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Designed a lightweight community pavilion optimizing natural solar gain and passive stack ventilation using 12 physical basswood study models.</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="px-6 pb-6 pt-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button onclick="openModal('project1')" class="w-full py-2 bg-slate-800 hover:bg-sage-500 text-slate-200 hover:text-white font-medium text-xs rounded-lg transition-all flex items-center justify-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-diagram-project"&gt;&lt;/i&gt; View Concept &amp; Process</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Project Card 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project-card sustainable glass-card rounded-xl overflow-hidden border border-slate-800 hover:border-sage-500/50 transition-all duration-300 group flex flex-col justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="relative h-56 overflow-hidden bg-slate-900"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&amp;w=800&amp;auto=format&amp;fit=crop"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                                 </span>alt="Sustainable Site Analysis"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                                 </span>class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"</p>
+<p class="p1"><span class="Apple-converted-space">                                 </span>onerror="this.src='https://placehold.co/800x600/1e293b/4a7c59?text=Microclimate+Study'"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="absolute top-3 left-3 bg-terracotta-500/90 text-white font-mono text-xs px-2.5 py-1 rounded"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Case Study</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center gap-2 text-xs font-mono text-terracotta-500 mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span&gt;RESEARCH&lt;/span&gt; • &lt;span&gt;MICROCLIMATE ANALYSIS&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-lg font-bold text-white mb-2 group-hover:text-sage-500 transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Campus Microclimate &amp; Shading Study</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-slate-400 text-sm leading-relaxed mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Analyzed seasonal wind flow, solar azimuth, and surface heat retention across campus walkways to propose green roof canopies.</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="px-6 pb-6 pt-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button onclick="openModal('project2')" class="w-full py-2 bg-slate-800 hover:bg-sage-500 text-slate-200 hover:text-white font-medium text-xs rounded-lg transition-all flex items-center justify-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-diagram-project"&gt;&lt;/i&gt; View Concept &amp; Process</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Project Card 3 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="project-card art glass-card rounded-xl overflow-hidden border border-slate-800 hover:border-sage-500/50 transition-all duration-300 group flex flex-col justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="relative h-56 overflow-hidden bg-slate-900"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&amp;w=800&amp;auto=format&amp;fit=crop"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                                 </span>alt="Hand Sketches Portfolio"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                                 </span>class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"</p>
+<p class="p1"><span class="Apple-converted-space">                                 </span>onerror="this.src='https://placehold.co/800x600/1e293b/4a7c59?text=Watercolor+Series'"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="absolute top-3 left-3 bg-accentGold/90 text-slate-900 font-bold font-mono text-xs px-2.5 py-1 rounded"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Analog Series</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center gap-2 text-xs font-mono text-accentGold mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span&gt;FINE ART&lt;/span&gt; • &lt;span&gt;WATERCOLOR &amp; INK&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-lg font-bold text-white mb-2 group-hover:text-sage-500 transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Structural Harmony: Urban Sketching</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-slate-400 text-sm leading-relaxed mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>A collection of 15 observational pen-and-ink drawings with watercolor wash exploring historic masonry, structural joins, and shadows.</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="px-6 pb-6 pt-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button onclick="openModal('project3')" class="w-full py-2 bg-slate-800 hover:bg-sage-500 text-slate-200 hover:text-white font-medium text-xs rounded-lg transition-all flex items-center justify-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-diagram-project"&gt;&lt;/i&gt; View Concept &amp; Process</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- SKILLS &amp; TECHNICAL COMPETENCIES --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="skills" class="py-20 border-t border-slate-800/80 bg-slate-900/40"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center max-w-3xl mx-auto mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-xs uppercase tracking-widest font-mono text-sage-500 mb-2"&gt;Technical Toolkit &amp; AI Literacy&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-3xl font-bold text-white sm:text-4xl"&gt;Analog Craft + Digital Fluency&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Skills Categories Grid --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Category 1: Analog &amp; Hand Skills --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="glass-card rounded-xl p-6 border border-slate-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="w-10 h-10 rounded-lg bg-terracotta-500/10 text-terracotta-500 flex items-center justify-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-pen-ruler"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="font-bold text-white"&gt;Analog &amp; Hand Craft&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-xs text-slate-400"&gt;Foundation Studio Skills&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex justify-between text-xs mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-slate-300"&gt;Freehand Sketching &amp; Ink&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-sage-500 font-mono"&gt;Advanced&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-full bg-slate-800 rounded-full h-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-sage-500 h-2 rounded-full w-11/12"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex justify-between text-xs mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-slate-300"&gt;Physical Model Making (Basswood/Board)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-sage-500 font-mono"&gt;Proficient&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-full bg-slate-800 rounded-full h-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-sage-500 h-2 rounded-full w-4/5"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex justify-between text-xs mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-slate-300"&gt;Architectural Watercolor Wash&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-sage-500 font-mono"&gt;Advanced&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-full bg-slate-800 rounded-full h-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-sage-500 h-2 rounded-full w-11/12"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex justify-between text-xs mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-slate-300"&gt;Laser Cutting &amp; Fabrication&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-sage-500 font-mono"&gt;Intermediate&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-full bg-slate-800 rounded-full h-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-sage-500 h-2 rounded-full w-3/5"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Category 2: Digital &amp; 3D Modeling --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="glass-card rounded-xl p-6 border border-slate-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-cube"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="font-bold text-white"&gt;Digital &amp; 3D Software&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-xs text-slate-400"&gt;CAD &amp; Visualization&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex justify-between text-xs mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-slate-300"&gt;Rhino 3D&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-blue-400 font-mono"&gt;In Progress&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-full bg-slate-800 rounded-full h-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-blue-500 h-2 rounded-full w-2/3"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex justify-between text-xs mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-slate-300"&gt;AutoCAD Fundamentals&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-blue-400 font-mono"&gt;Intermediate&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-full bg-slate-800 rounded-full h-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-blue-500 h-2 rounded-full w-3/4"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex justify-between text-xs mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-slate-300"&gt;Adobe Photoshop / Illustrator&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-blue-400 font-mono"&gt;Proficient&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-full bg-slate-800 rounded-full h-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-blue-500 h-2 rounded-full w-4/5"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex justify-between text-xs mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-slate-300"&gt;Revit (Learning Target)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-blue-400 font-mono"&gt;Basic&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-full bg-slate-800 rounded-full h-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-blue-500 h-2 rounded-full w-1/3"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Category 3: AI Literacy &amp; Sustainable Tools --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="glass-card rounded-xl p-6 border border-slate-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="w-10 h-10 rounded-lg bg-sage-500/10 text-sage-500 flex items-center justify-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-robot"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="font-bold text-white"&gt;AI &amp; Climate Analysis&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-xs text-slate-400"&gt;Modern Engineering Edge&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex justify-between text-xs mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-slate-300"&gt;Generative AI Ideation Prompting&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-sage-500 font-mono"&gt;Exploratory&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-full bg-slate-800 rounded-full h-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-sage-500 h-2 rounded-full w-4/5"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex justify-between text-xs mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-slate-300"&gt;Climate Consultant (Sun/Wind Data)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-sage-500 font-mono"&gt;Intermediate&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-full bg-slate-800 rounded-full h-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-sage-500 h-2 rounded-full w-3/5"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex justify-between text-xs mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-slate-300"&gt;Ethical AI Workflow Assessment&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-sage-500 font-mono"&gt;High&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-full bg-slate-800 rounded-full h-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-sage-500 h-2 rounded-full w-5/6"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex justify-between text-xs mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-slate-300"&gt;Grasshopper Parametric Basics&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-sage-500 font-mono"&gt;Learning&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-full bg-slate-800 rounded-full h-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-sage-500 h-2 rounded-full w-2/5"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- CAREER GOALS &amp; EXPLORATION --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="goals" class="py-20 border-t border-slate-800/80"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Goals Left: Vision Statement --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="lg:col-span-5 space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-xs uppercase tracking-widest font-mono text-sage-500"&gt;Trajectory &amp; Ambition&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-3xl font-bold text-white sm:text-4xl"&gt;Where I Am Headed&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-slate-400 text-sm leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>My primary objective during my undergraduate degree is to master the balance between environmental responsibility and structural beauty. Rather than specializing too early, I am actively seeking summer internships and lab research in sustainable materials.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Active Pursuits List --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-3 pt-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-circle-check text-sage-500 mt-1"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h4 class="text-sm font-semibold text-white"&gt;Targeting LEED Green Associate&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-xs text-slate-400"&gt;Preparing to take exam during sophomore year to solidify sustainability principles.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-circle-check text-sage-500 mt-1"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h4 class="text-sm font-semibold text-white"&gt;Mass Timber &amp; Bio-Materials Research&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-xs text-slate-400"&gt;Investigating localized timber supply chains and carbon sequestration in construction.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-start gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-circle-check text-sage-500 mt-1"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h4 class="text-sm font-semibold text-white"&gt;Active Student Organizations&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-xs text-slate-400"&gt;Member of AIAS (American Institute of Architecture Students) and USGBC Student Chapter.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Goals Right: Academic Timeline Roadmap --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="lg:col-span-7"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="glass-card rounded-2xl p-6 sm:p-8 border border-slate-800 space-y-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-bold text-white flex items-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fa-solid fa-route text-sage-500"&gt;&lt;/i&gt; Undergraduate Roadmap</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/h3&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="relative pl-6 border-l-2 border-slate-800 space-y-8"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                            </span></p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;!-- Year 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-sage-500 ring-4 ring-slate-900"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-xs font-mono text-sage-500"&gt;YEAR 1 (CURRENT)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h4 class="text-base font-semibold text-white mt-1"&gt;Foundations &amp; Spatial Literacy&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-xs text-slate-400 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>Mastering hand drafting, physical model making, studio iterative feedback, and environmental physics basics.</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;!-- Year 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-slate-700 ring-4 ring-slate-900"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-xs font-mono text-slate-500"&gt;YEAR 2&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h4 class="text-base font-semibold text-slate-300 mt-1"&gt;BIM &amp; Building Performance Simulation&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-xs text-slate-400 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>Integrating Revit, Grasshopper daylight simulations, and pursuing summer architectural research internships.</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;!-- Year 3 &amp; Beyond --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-slate-700 ring-4 ring-slate-900"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-xs font-mono text-slate-500"&gt;YEAR 3 &amp; 4&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h4 class="text-base font-semibold text-slate-300 mt-1"&gt;Net-Zero Design Studio &amp; Professional Practice&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-xs text-slate-400 mt-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>Focusing senior thesis on regenerative urban habitats and preparing for graduate school / LEED accreditation.</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- CONTACT &amp; FOOTER SECTION --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contact" class="py-20 border-t border-slate-800/80 bg-slate-900/60"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 lg:grid-cols-12 gap-12"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Contact Info Left --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="lg:col-span-5 space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-xs uppercase tracking-widest font-mono text-sage-500"&gt;Get In Touch&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-3xl font-bold text-white sm:text-4xl"&gt;Let's Connect &amp; Collaborate&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-slate-400 text-sm leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>I am always eager to talk with practicing architects, structural engineers, professors, and fellow students. Feel free to reach out regarding summer internships, design projects, or mentorship!</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="space-y-4 pt-4 text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-sage-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fa-regular fa-envelope"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-xs text-slate-500 block"&gt;Email Direct&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;a href="mailto:alex.rivera.arch@university.edu" class="text-white hover:text-sage-500 font-medium transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>alex.rivera.arch@university.edu</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-sage-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fa-brands fa-linkedin-in"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-xs text-slate-500 block"&gt;LinkedIn Profile&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;a href="#" onclick="alert('Link placeholder: Add your actual LinkedIn URL here!')" class="text-white hover:text-sage-500 font-medium transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>linkedin.com/in/alex-rivera-arch</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-sage-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fa-regular fa-file-pdf"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-xs text-slate-500 block"&gt;Resume &amp; Portfolio PDF&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;a href="#" onclick="alert('PDF download placeholder: Upload your PDF to GitHub and link it here!')" class="text-white hover:text-sage-500 font-medium transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>Download 1-Page Academic Resume</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Contact Form Right --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="lg:col-span-7"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="glass-card rounded-2xl p-6 sm:p-8 border border-slate-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-lg font-bold text-white mb-6"&gt;Send a Message&lt;/h3&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="grid grid-cols-1 sm:grid-cols-2 gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;label class="block text-xs font-mono text-slate-400 mb-2"&gt;YOUR NAME&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;input type="text" required placeholder="Jane Doe" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-sage-500 transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;label class="block text-xs font-mono text-slate-400 mb-2"&gt;EMAIL ADDRESS&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;input type="email" required placeholder="jane@example.com" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-sage-500 transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label class="block text-xs font-mono text-slate-400 mb-2"&gt;SUBJECT&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;input type="text" required placeholder="Internship Opportunity / Project Inquiry" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-sage-500 transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;label class="block text-xs font-mono text-slate-400 mb-2"&gt;MESSAGE&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;textarea rows="4" required placeholder="Hi Alex, I enjoyed reviewing your solar pavilion concept..." class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-sage-500 transition-colors"&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;button type="submit" class="w-full py-3 bg-sage-500 hover:bg-sage-600 text-white font-medium text-sm rounded-lg transition-all shadow-lg shadow-sage-500/20 flex items-center justify-center gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fa-regular fa-paper-plane"&gt;&lt;/i&gt; Send Message</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/form&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- Confirmation Message Container --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div id="formStatus" class="hidden mt-4 p-4 rounded-lg bg-sage-500/20 border border-sage-500 text-sage-400 text-xs text-center font-mono"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Thank you! Your message has been sent successfully. I will get back to you shortly.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Footer Bottom --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mt-16 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;© &lt;span id="currentYear"&gt;&lt;/span&gt; Alex Rivera. Built for GitHub Pages.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex items-center gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#hero" class="hover:text-sage-500 transition-colors"&gt;Back to Top &lt;i class="fa-solid fa-arrow-up ml-1"&gt;&lt;/i&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- INTERACTIVE PROJECT MODAL (Light Box) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="projectModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 bg-slateDark/80 backdrop-blur-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="glass-card rounded-2xl border border-slate-700 max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 relative shadow-2xl"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Close Button --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;i class="fa-solid fa-xmark text-xl"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Modal Content (Injected dynamically by JavaScript) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="modalContent"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- JAVASCRIPT FOR INTERACTION --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Set dynamic year in footer</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('currentYear').textContent = new Date().getFullYear();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Mobile Menu Toggle</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mobileMenuBtn = document.getElementById('mobileMenuBtn');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mobileMenu = document.getElementById('mobileMenu');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mobileLinks = document.querySelectorAll('.mobile-link');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>mobileMenuBtn.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>mobileMenu.classList.toggle('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>mobileLinks.forEach(link =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>link.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>mobileMenu.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Filter Projects Logic</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function filterProjects(category) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const cards = document.querySelectorAll('.project-card');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const buttons = document.querySelectorAll('.tab-btn');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Toggle active state on tab buttons</p>
+<p class="p1"><span class="Apple-converted-space">            </span>buttons.forEach(btn =&gt; btn.classList.remove('active'));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>event.currentTarget.classList.add('active');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>cards.forEach(card =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (category === 'all' || card.classList.contains(category)) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>card.style.display = 'flex';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>card.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Project Data for Modal</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const projectData = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>project1: {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "Solar-Oriented Timber Pavilion",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>category: "Studio Project • Fall Semester",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&amp;w=800&amp;auto=format&amp;fit=crop",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>concept: "The project explores passive solar design and natural ventilation in a public gathering space. Using precise sun path diagrams, the roof angle was modeled to maximize winter solar heat gain while blocking harsh summer sun.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>sustainability: "Constructed entirely from locally sourced mass timber with minimal embedded carbon. Designed for disassembled modular reusability.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>process: "Over 12 iterations of physical basswood study models (1:50 scale) alongside initial freehand charcoal sketches."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>project2: {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "Campus Microclimate &amp; Shading Study",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>category: "Environmental Engineering Case Study",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&amp;w=800&amp;auto=format&amp;fit=crop",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>concept: "A quantitative analysis of heat islands across central campus walkways during peak autumn months.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>sustainability: "Proposed a series of bio-swale canopy interventions that reduce local ground temperature by an estimated 3.5°C.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>process: "Field temperature readings combined with Climate Consultant software modeling to map wind and shade corridors."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>project3: {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title: "Structural Harmony: Urban Sketching",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>category: "Fine Art &amp; Hand Graphics",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&amp;w=800&amp;auto=format&amp;fit=crop",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>concept: "Observational artwork highlighting historic stone arches, modern steel trusses, and natural light casting.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>sustainability: "Understanding historic building techniques that stood the test of time through passive thermal mass.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>process: "Created on site using micron ink pens, watercolor wash, and toned archival sketch paper."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Modal Logic</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const modal = document.getElementById('projectModal');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const modalContent = document.getElementById('modalContent');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function openModal(projectId) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const data = projectData[projectId];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (!data) return;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>modalContent.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="text-xs font-mono text-sage-500 uppercase tracking-widest"&gt;${data.category}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-2xl font-bold text-white mt-1 mb-4"&gt;${data.title}&lt;/h3&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="h-64 rounded-xl overflow-hidden mb-6 bg-slate-900"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="${data.image}" alt="${data.title}" class="w-full h-full object-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="space-y-4 text-sm text-slate-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="font-bold text-white text-xs font-mono uppercase text-sage-500"&gt;Design Concept&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-1 leading-relaxed"&gt;${data.concept}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="font-bold text-white text-xs font-mono uppercase text-sage-500"&gt;Sustainability &amp; Climate Strategy&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-1 leading-relaxed"&gt;${data.sustainability}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="font-bold text-white text-xs font-mono uppercase text-sage-500"&gt;Iterative Process&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="mt-1 leading-relaxed"&gt;${data.process}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>modal.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function closeModal() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>modal.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Close Modal when clicking outside content</p>
+<p class="p1"><span class="Apple-converted-space">        </span>modal.addEventListener('click', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (e.target === modal) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>closeModal();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Simulated Contact Form Submit</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function handleFormSubmit(event) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>event.preventDefault();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const status = document.getElementById('formStatus');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>status.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>event.target.reset();</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>status.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}, 6000);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
